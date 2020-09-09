@@ -1,0 +1,208 @@
+/*Common CSS start*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none!important;
+}
+
+.clr {
+    clear: both;
+}
+
+.full-wrapper {
+    width: 100%;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*Common CSS end*/
+
+/*import and Declare Fonts Start*/
+
+@font-face {
+    font-family: rr;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: rb;
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+/*import and Declare Fonts end*/
+
+/* Preloader Part Start */
+
+body {
+    position: relative;
+}
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 99999;
+}
+
+.preloader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Preloader CSS End*/
+
+.navbar {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    position: fixed;
+
+    transition: all linear .3s;
+
+}
+
+.navbar img {
+    height: 49px;
+    width: 78px;
+}
+
+
+.navbar-light .navbar-toggler {
+    color: rgba(204, 202, 200, .8);
+    border-color: rgba(204, 202, 200, .8);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 25px;
+    font-size: 20px;
+    font-family: rr;
+    color: #3e600d;
+    transition: all linear .3s;
+    position: relative;
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+
+    color: #fff;
+    background: #6FB011;
+
+
+}
+
+.dropdown-item:focus,
+.dropdown-item {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #312929;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #6FB011;
+}
+
+
+.add-nav {
+    background: #312929!important;
+  
+}
+
+.add-nav ul li a {
+    color: #eef6fd!important;
+
+}
+
+
+/*===================
+Banner Part CSS Start
+====================*/
+
+.ntext .pic img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.ntext {
+    padding: 100px 0px;
+}
+
+.ntext h3 {
+    font-family: rb;
+    line-height: 30px;
+    /*    text-align: center;*/
+/*    padding-bottom: 50px;*/
+}
+.ntext .underline{
+    padding-bottom: 50px;
+}
+
+.ntext p {
+    font-family: rr;
+    line-height: 30px;
+
+}
+
+.ntext .boldclass {
+    font-family: rb;
+    font-weight: 600;
+}
+
+.ntext ul li {
+    font-family: rr;
+    line-height: 30px;
+    list-style-type: disc;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.ntext h4 {
+
+    font-family: rb;
+    line-height: 30px;
+
+    padding-bottom: 20px;
+}
+
+/*footer part css start*/
+
+.footer {
+    padding: 50px 0px;
+    text-align: center;
+    background: #312929;
+
+}
+
+.footer h4 {
+    font-family: rr;
+    color: #DDD;
+}
+
+/*footer part css end*/

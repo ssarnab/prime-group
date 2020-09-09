@@ -1,0 +1,560 @@
+/*Common CSS start*/
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+ul,
+ol {
+    list-style-type: none;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none!important;
+}
+.clr {
+    clear: both;
+}
+.full-wrapper{
+    width: 100%;
+}
+.wrapper{
+    width: 1140px;
+    margin: 0 auto;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*Common CSS end*/
+
+/*import and Declare Fonts Start*/
+
+@font-face {
+    font-family: rr;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: rb;
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+/*import and Declare Fonts end*/
+
+/* Preloader Part Start */
+
+
+
+
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 99999;
+}
+
+.preloader img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*Preloader CSS End*/
+
+.navbar {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    top: 0;
+    position: fixed;
+/*    padding-top: 10px;*/
+    transition: all linear .3s;
+   
+}
+.navbar img{
+    height:49px;
+    width: 78px;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(204, 202, 200, .8);
+    border-color: rgba(204, 202, 200, .8);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left:20px;
+    padding-right:20px;
+    font-size: 20px;
+    font-family: rr;
+    color: #3e600d;
+    transition: all linear .3s;
+    position: relative;
+}
+
+
+.navbar-expand-lg .navbar-nav .nav-link:hover  {
+
+    color: #fff;
+    background:#6FB011; 
+    
+
+}
+.dropdown-item:focus, .dropdown-item {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #1A1D1F;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #6FB011;
+}
+
+
+.add-nav {
+    background: #1A1D1F!important;
+}
+
+.add-nav ul li a {
+    color: #eef6fd!important;
+
+}
+
+
+/*===================
+Banner Part CSS Start
+====================*/
+
+body {
+    position: relative;
+}
+
+
+.banner-bg {
+    background: url(../images/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    background-attachment: fixed;
+
+}
+
+.banner-bg::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(44, 55, 64,.6);
+
+}
+
+.banner-bg .text {
+    padding-top:400px;
+    position: relative;
+    z-index: 99;
+
+}
+
+.banner-bg .text h3 {
+    font-family: rr;
+    color: #fff;
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.banner-bg .text .type-wrap {
+    font-family: rb;
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+
+
+
+/*===================
+Banner Part CSS End
+====================*/
+
+
+/*about-us part start*/
+
+.about-us{
+    
+    padding-top:100px;
+   
+    
+}
+.about-us .design{
+     border: 1px dotted #6FB011;
+}
+
+.about-us h2{
+    padding-bottom: 50px;
+    font-family: rr;
+}
+.about-us .special h2{
+    font-family:rr;
+    padding-bottom: 50px;
+    display: inline-block;
+    
+}
+
+.about-us .special h2::after {
+	position: absolute;
+	content: '';
+	bottom: 40px;
+	left: 49%;
+	width: 30px;
+	height: 4px;
+    transform: translateX(-49%);
+	background: #000000;
+}
+
+.about-us .special h2::before {
+	position: absolute;
+	content: '';
+	bottom: 40px;
+	left: 51%;
+	width: 30px;
+    transform: translateX(-51%);
+	height: 4px;
+	background: #6FB011;
+}
+
+
+
+
+.about-us .design1 p{
+    font-family: rr;
+    line-height: 30px;
+    padding-top:80px; 
+}
+
+/*about-us part end*/
+/*companies part css start*/
+
+.companies{
+
+    padding-bottom: 50px;
+   
+}
+
+.companies h2{
+    padding:50px 0px;
+}
+.about-us .special h2{
+    font-family:rr;
+    
+    display: inline-block;
+    
+}
+.companies .special h2::after {
+	position: absolute;
+	content: '';
+	bottom: 40px;
+	left: 49%;
+	width: 30px;
+	height: 4px;
+    transform: translateX(-49%);
+	background: #000000;
+}
+
+.companies .special h2::before {
+	position: absolute;
+	content: '';
+	bottom: 40px;
+	left: 51%;
+	width: 30px;
+    transform: translateX(-51%);
+	height: 4px;
+	background: #6FB011;
+}
+
+
+
+
+.companies a {
+	font-family: rb;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #1A1D1F;
+    transition: all linear .3s;
+    
+}
+
+.companies a:hover{
+    color: #fff;
+}
+
+.companies .one{
+    background: #ffffff;
+    transition: all linear .5s;
+       height: 100%;
+      padding:50px 0px; 
+    border: 1.5px solid #dedede;
+    box-shadow: 5px 10px #e3e3e3;
+    
+}
+.companies .one:hover{
+ 
+    border:1.5px solid #6FB011;
+    background:#6FB011;
+    
+}
+
+.companies .one1 i::before{
+    font-size: 50px;
+    
+}
+.companies .one1 i:hover{
+    color:#ffffff; 
+    
+}
+.companies .two{
+    background: #ffffff;
+     transition: all linear .3s;
+        height: 100%;
+      padding:50px 0px; 
+       border: 1.5px solid #dedede;
+       box-shadow: 5px 10px #e3e3e3;
+}
+.companies .two:hover{
+     border:1.5px solid #6FB011;
+    background:#6FB011;
+    
+}
+.companies .three{
+    background: #fff;
+     transition: all linear .3s;
+     height: 100%;
+      padding:50px 0px; 
+       border: 1.5px solid #dedede;
+       box-shadow: 5px 10px #e3e3e3;
+}
+.companies .three:hover{
+     border:1.5px solid #6FB011;
+    background:#6FB011;
+    
+}
+.companies .four{
+    background: #fff;
+     transition: all linear .3s;
+      height: 100%;
+      padding:50px 0px; 
+       border: 1.5px solid #dedede;
+       box-shadow: 5px 10px #e3e3e3;
+}
+.companies .four:hover{
+     border:1.5px solid #6FB011;
+    background:#6FB011;
+    
+}
+.companies .five{
+    background: #fff;
+     transition: all linear .3s;
+    height: 100%;
+   padding-top:30px; 
+       border: 1.5px solid #dedede;
+       box-shadow: 5px 10px #e3e3e3;
+}
+.companies .five:hover{
+   border:1.5px solid #6FB011;
+    background:#6FB011;
+    
+}
+.companies .six{
+    background: #fff;
+     transition: all linear .3s;
+        height: 100%;
+      padding:50px 0px;
+       border: 1.5px solid #dedede;
+       box-shadow: 5px 10px #e3e3e3;
+}
+.companies .six:hover{
+   border:1.5px solid #6FB011;
+    background:#6FB011;
+    
+}
+.companies .seven{
+    background: #fff;
+     transition: all linear .3s;
+        height: 100%;
+      padding:50px 0px; 
+       border: 1.5px solid #dedede;
+       box-shadow: 5px 10px #e3e3e3;
+}
+.companies .seven:hover{
+  border:1.5px solid #6FB011;
+    background:#6FB011;
+    
+}
+.col-lg-4 .col-lg-10{
+	
+    max-height:200px; 
+  
+  
+}
+
+.col-lg-4 {
+	margin-bottom: 27px;
+   
+}
+
+
+/*companies part css end*/
+
+/*clients part css*/
+  
+.item{
+    width: 360px;
+    float: left;
+    background: #ffffff;
+    text-align: center;
+    padding: 10px;
+    margin: 0 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.special-main {
+    background:#1A1D1F;
+}
+.special1 h2 { 
+    color: #fff;
+    font-family: rb;
+    transition: all linear .3s;
+}
+.special-main:hover{
+    background:#6FB011;
+}
+/*client part css end*/
+/*contact part css start*/
+
+.contact i{
+    font-size: 30px;
+     padding-right: 10px;
+    transition: all linear .3s;
+}
+
+.contact i:hover{
+   color: #6FB011;
+}
+.contact p{
+    font-size: 18px;
+    font-family: rb;
+    color: #f5f1f1;
+   
+}
+.contact h2{
+    padding: 60px 0px;
+    text-align: center;
+    color: #f4e7e7;
+}
+
+.contact{
+    padding-bottom:50px; 
+    padding-top: 50px;
+   
+}
+
+
+
+.banner-bg2 {
+    background: url(../images/banner2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   
+
+}
+
+
+
+/*contact part css end*/
+
+/*footer part css start*/
+
+.footer{
+    padding:50px 0px; 
+    text-align: center;
+    background: #1A1D1F;
+   
+}
+.footer h4{
+    font-family: rr;
+    color: #DDD;
+}
+/*footer part css end*/
+
+/*back to top*/
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    display: none;
+}
+
+.back-to-top i {
+    width: 50px;
+    height: 50px;
+    background: #DDD;
+    color: #6FB011;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    transition: all linear .3s;
+}
+.back-to-top i:hover{
+   
+    background: #6FB011;
+    color: #ddd;
+   
+}
+
+/*back to top end*/
+
+/* happy client */
+
+.client-slide .slick-slide img {
+	display: inline-block;
+}
+.client-slide {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
